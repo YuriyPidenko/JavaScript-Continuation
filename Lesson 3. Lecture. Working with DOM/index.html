@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+    <style>
+        .heading {
+            color: white;
+            text-transform: uppercase;
+            background-color: #ccc;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  1
+    <div class="content"> </div> -->
+
+
+    <ui class="menu">
+        <li class="menu__list"><a href="#" class="menu__link">linkk-1</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">linkk-2</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">linkk-3</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">linkk-4</a></li>
+    </ui>
+
+
+    <script>
+        const liEl = document.querySelectorAll('.menu__list');
+        const liElOne = document.querySelector('.menu__list');
+        const linkEl = document.querySelector('.menu__link');
+        const menuEl = document.querySelector('.menu');
+
+        // console.log(liEl);
+        // console.log(liElOne.parentNode); // находим родитеслький узел
+        // console.log(liElOne.parentNode.childNodes); // находим дочерний узел
+        // console.log(liElOne.parentNode.children); // дочерний элемент 
+
+        // console.log(linkEl.children);
+        // console.log(linkEl.childNodes);
+
+        // console.log(menuEl.children);
+        // console.log(menuEl.childNodes);
+
+        // menuEl.childNodes.forEach(element => {
+        //     console.log(element);
+        // });
+
+        // console.log(liElOne);
+        // console.log(liElOne.parentElement.lastElementChild);
+        // console.log(liElOne.parentElement.lastChild);
+        console.log(liElOne.parentElement.firstElementChild);
+        console.log(liElOne.nextElementSibling.nextElementSibling.previousElementSibling);
+
+
+
+
+
+
+
+        // 1
+        // const content = document.querySelector('.content');
+
+        // const h1El = document.createElement('h1');
+        // h1El.textContent = 'h1 element';
+        // h1El.setAttribute('class', 'heading'); // добавления атрибута (добавили класс)
+
+        // const imgEl = document.createElement('img');
+        // imgEl.src = 'photo.png'
+        // imgEl.setAttribute('alt', 'Крутое фото')
+
+        // content.append(h1El);
+        // content.append(imgEl);
+
+    </script>
+
+</html>
