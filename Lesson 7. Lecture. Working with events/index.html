@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 7</title>
+    <style>
+        .select__error {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- <form class="form" action="index.html">
+        <div>
+            <label for="select">Город</label>
+            <select class="select" name="select" id="select">
+                <option class="option" value="city">Выберите город...</option>
+                <option class="option" value="Kracnodar">Краснодар</option>
+                <option class="option" value="Rostov">Ростов</option>
+                <option class="option" value="Stavropol">Ставрополь</option>
+                <option class="option" value="Sochi">Сочи</option>
+                <option class="option" value="Maykop">Мфйкоп</option>
+            </select>
+        </div>
+        <button type="submit" class="button">Отправить</button>
+    </form>
+
+    <script>
+        const formEl = document.querySelector('.form');
+        const selectEl = formEl.querySelector('.select');
+        const buttonEl = formEl.querySelector('.button');
+
+        document.addEventListener('click', function (e) {
+            console.log(selectEl.value);
+            e.preventDefault();
+            if (selectEl.value === 'city') {
+                selectEl.classList.add('select__error');
+            } else {
+                selectEl.classList.remove('select__error');
+                return
+            }
+        });
+    </script> -->
+
+
+    <!-- <form class="form" action="#">
+        <h2>Форма</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorum qui laudantium in deleniti officia
+            harum voluptatem odit laboriosam! Id iure amet quisquam voluptatibus a fugit, quo perspiciatis maxime omnis
+            officiis dolorum alias iste reiciendis repellendus ratione nostrum nisi minus maiores commodi adipisci nemo
+            vel. Non culpa maxime explicabo inventore!</p>
+        <input id="checkbox" type="checkbox" class="check">
+        <label for="checkbox">
+            Согласен с условиями
+        </label>
+        <div class="error"></div>
+        <button type="submit">Отправить</button>
+    </form>
+
+
+
+    <script>
+        const inputEl = document.querySelector('.check');
+        const formEl = document.querySelector('.form');
+        const errorEl = document.querySelector('.error');
+
+        inputEl.addEventListener('click', function (e) {
+            const targer = e.target;
+            console.log(targer.checked);
+        });
+
+        formEl.addEventListener('submit', function (e) {
+            if (inputEl.checked) {
+                console.log('Молодец');
+            } else {
+                errorEl.textContent = 'Выбрать согласен с условиями'
+                e.preventDefault();
+            }
+        });
+    </script> -->
+</body>
+
+</html>
